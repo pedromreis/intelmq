@@ -7,7 +7,7 @@ import intelmq.lib.utils as utils
 from intelmq.lib.bot import Bot
 
 
-class UDPBot(Bot):
+class UDPCefBot(Bot):
 
     def init(self):
         self.delimiter = self.parameters.field_delimiter
@@ -52,5 +52,5 @@ class UDPBot(Bot):
 
 
 if __name__ == "__main__":
-    bot = UDPBot(sys.argv[1])
+    bot = UDPCefBot(sys.argv[1])
     bot.start()
